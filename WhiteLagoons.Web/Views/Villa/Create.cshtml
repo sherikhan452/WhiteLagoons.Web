@@ -1,0 +1,42 @@
+﻿
+@model WhiteLagoons.Domain.Entities.Villa
+
+
+<form method="post" >
+
+    <label asp-for="Name" class="form-label">Name</label>
+    <input asp-for="Name" class="form-control"/>
+    <span asp-validation-for="Name" class="text-danger"></span>
+
+    <label asp-for="SqFt" class="form-label">SqFt</label>
+    <input asp-for="SqFt" class="form-control" />
+    <span asp-validation-for="SqFt" class="text-danger"></span>
+
+
+    <label asp-for="price" class="form-label">price</label>
+    <input asp-for="price" class="form-control" />
+    <span asp-validation-for="price" class="text-danger"></span>
+
+    <label asp-for="Occupancy" class="form-label"> Occupancy</label>
+    <input asp-for="Occupancy" class="form-control" />
+    <span asp-validation-for="Occupancy" class="text-danger"></span>
+
+
+    <label asp-for="ImgUrl" class="form-label"> ImgUrl</label>
+    <input asp-for="ImgUrl" class="form-control" />
+    <span asp-validation-for="ImgUrl" class="text-danger"></span>
+
+    <label asp-for="CreatedDate" class="form-label"> CreatedDate</label>
+    <input asp-for=" CreatedDate" class="form-control" />
+    <span asp-validation-for="CreatedDate" class="text-danger"></span>
+
+
+    <label asp-for="UpdatedDate" class="form-label"> UpdatedDate</label>
+    <input asp-for=" UpdatedDate" class="form-control" />
+    <span asp-validation-for="UpdatedDate" class="text-danger"></span>
+
+
+    <button type="submit" value="submit" class="btn btn-outline-dark">Submit</button>
+
+
+</form>
