@@ -35,7 +35,9 @@ namespace WhiteLagoons.Web.Controllers
             {
                 _db.Villas.Add(obj);
                 _db.SaveChanges();
-                ViewBag.success = "Data is Inserted";
+                TempData["success"] = "Data is Inserted";
+
+
                 return RedirectToAction("Index");
             }
 
@@ -63,7 +65,7 @@ namespace WhiteLagoons.Web.Controllers
             {
                 _db.Villas.Update(obj);
                 _db.SaveChanges();
-                ViewBag.success = "Data is Updated";
+                TempData["success"] = "Data is Updated";
                 return RedirectToAction("Index");
             }
 
@@ -78,7 +80,7 @@ namespace WhiteLagoons.Web.Controllers
             {
                 _db.Villas.Remove(dl);
                 _db.SaveChanges();
-                ViewBag.success = "Data is Remove";
+                TempData["danger"] = "Data is Deleted";
                 return RedirectToAction("Index");
             }
             return View();
