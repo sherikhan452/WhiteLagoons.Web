@@ -15,6 +15,7 @@ namespace WhiteLagoons.Infastructure.Data
 
         public DbSet<Villa> Villas { get; set; }
         public DbSet<Admin> Admins { get; set; }
+        public DbSet<VillaNumber> VillaNumbers { get; set; }
 
     }
     }

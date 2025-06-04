@@ -1,0 +1,41 @@
+﻿@model IEnumerable<WhiteLagoons.Domain.Entities.VillaNumber>
+
+<h1>Villa Number</h1>
+
+
+
+
+<table class="table table-dark">
+    <a class="btn btn-outline-success btn-sm me-2 m-2 align-content-center" asp-controller="VillaNumber" asp-action="Create">Create Villa Number</a> 
+    <thead>
+        <tr>
+            <th>VillaNumber</th>
+            <th>VillaID</th>
+            <th>VillaDetails</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.VillaNum</td>
+                <td>@item.VillaID</td>
+                <td>@item.VillaDetails</td>
+               
+               <td>
+                    <div class="w-75 btn-group">
+                        <a asp-controller="VillaNumber" asp-action="Update" asp-route-VillaID="@item.VillaNum" class="btn btn-sm btn-outline-primary">Update</a>
+                        <a asp-controller="VillaNumber" asp-action="Delete" asp-route-VillaID="@item.VillaNum" class="btn btn-sm btn-outline-danger">Delete</a>
+                    </div> 
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+
+

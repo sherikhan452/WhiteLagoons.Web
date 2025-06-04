@@ -80,6 +80,35 @@ namespace WhiteLagoons.Infastructure.Migrations
 
                     b.ToTable("Villas");
                 });
+
+            modelBuilder.Entity("WhiteLagoons.Domain.Entities.VillaNumber", b =>
+                {
+                    b.Property<int>("VillaNum")
+                        .HasColumnType("int");
+
+                    b.Property<string>("VillaDetails")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("VillaID")
+                        .HasColumnType("int");
+
+                    b.HasKey("VillaNum");
+
+                    b.HasIndex("VillaID");
+
+                    b.ToTable("VillaNumbers");
+                });
+
+            modelBuilder.Entity("WhiteLagoons.Domain.Entities.VillaNumber", b =>
+                {
+                    b.HasOne("WhiteLagoons.Domain.Entities.Villa", "Villa")
+                        .WithMany()
+                        .HasForeignKey("VillaID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Villa");
+                });
 #pragma warning restore 612, 618
         }
     }

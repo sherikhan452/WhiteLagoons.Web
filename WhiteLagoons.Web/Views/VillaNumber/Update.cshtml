@@ -1,0 +1,23 @@
+﻿@model WhiteLagoons.Domain.Entities.VillaNumber
+
+
+<form method="post">
+
+    <label asp-for="VillaNum" class="form-label">VillaNum</label>
+    <input asp-for="VillaNum" class="form-control" />
+    <span asp-validation-for="VillaNum" class="text-danger"></span>
+
+    <label asp-for="VillaID" class="form-label">VillaID</label>
+    <input asp-for="VillaID" class="form-control" />
+    <span asp-validation-for="VillaID" class="text-danger"></span>
+
+
+    <label asp-for="VillaDetails" class="form-label">VillaDetails</label>
+    <input asp-for="VillaDetails" class="form-control" />
+    <span asp-validation-for="VillaDetails" class="text-danger"></span>
+
+
+    <button type="submit" value="submit" class="btn btn-outline-dark">Submit</button>
+
+
+</form>

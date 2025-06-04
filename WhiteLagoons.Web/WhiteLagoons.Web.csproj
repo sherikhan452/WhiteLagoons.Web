@@ -3,6 +3,9 @@
 
 
 
+
+
+
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
@@ -11,6 +14,24 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>5eaf2161-e43d-489c-a14f-50dfee50cd59</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Admin\vendors\bootstrap\.github\CONTRIBUTING.md" />
+    <None Include="wwwroot\Admin\vendors\bootstrap\.github\ISSUE_TEMPLATE\bug.md" />
+    <None Include="wwwroot\Admin\vendors\bootstrap\.github\ISSUE_TEMPLATE\bug_report.md" />
+    <None Include="wwwroot\Admin\vendors\bootstrap\.github\ISSUE_TEMPLATE\feature.md" />
+    <None Include="wwwroot\Admin\vendors\bootstrap\.github\ISSUE_TEMPLATE\feature_request.md" />
+    <None Include="wwwroot\Admin\vendors\bootstrap\.github\SUPPORT.md" />
+    <None Include="wwwroot\Admin\vendors\jquery-validation-unobtrusive\.vsts-pipelines\builds\ci-public.yml" />
+    <None Include="wwwroot\assets\bootstrap\.github\CONTRIBUTING.md" />
+    <None Include="wwwroot\assets\bootstrap\.github\ISSUE_TEMPLATE\bug.md" />
+    <None Include="wwwroot\assets\bootstrap\.github\ISSUE_TEMPLATE\bug_report.md" />
+    <None Include="wwwroot\assets\bootstrap\.github\ISSUE_TEMPLATE\feature.md" />
+    <None Include="wwwroot\assets\bootstrap\.github\ISSUE_TEMPLATE\feature_request.md" />
+    <None Include="wwwroot\assets\bootstrap\.github\SUPPORT.md" />
+    <None Include="wwwroot\assets\jquery-validation-unobtrusive\.vsts-pipelines\builds\ci-public.yml" />
+    <None Include="wwwroot\vendor\jquery-validation-unobtrusive\.vsts-pipelines\builds\ci-public.yml" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.11" />
